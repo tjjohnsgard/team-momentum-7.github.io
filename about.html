@@ -8,12 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <script src="JavaScript/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
     <script src="CSS/Scripts.js"></script>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/reset.css">
 </head>
 <body>
      <header>
@@ -76,7 +81,123 @@
             </div>
         </nav>
     </header>
-    
+     <main>
+         <section class="about-us-h1">
+            <h1>ABOUT US</h1>
+        </section>
+        <section>
+            <div class="about-us-container">
+                <div class="flex-item">
+                    <h2>The<br>Owner</h2>
+                    <p><cite>"Where the gallop echoes, dreams take root."</cite></p>
+                </div>
+                <div class="flex-item">
+                    <img src="images/owner_hero_filter.png" alt="Picture of Michael Walker with horse Cisco">
+                    <p>Michael Walker & Cisco</p>
+                </div>
+                <div class="flex-item">
+                    <p>His life was spent in the saddle, raising and training naturally gaited horses in the heart of Texas. A passion for smooth rides, he’s dedicated to sharing the freedom and beauty of trail riding with every rider who visits the ranch.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+             <div class="meet-the-dog">
+                <h2>MEET THE DOGS</h2>
+            </div>
+        <section class="container-carousel">
+            <div class="carousel">
+                <a class="open-modal2" data-target="#baily"> <img src="images/dog_1_filter.png" alt="Baily" />
+                        <p><strong>Baily</strong></p></a>
+                <a class="open-modal2" data-target="#rockie"> <img src="images/dog_2_filter.png" alt="Rockie" />
+                    <p><strong>Rockie</strong></p></a>
+                <a class="open-modal2" data-target="#frisco"> <img src="images/dog_3_filter.png" alt="Frisco" />
+                    <p><strong>Frisco</strong></p></a>
+                <a class="open-modal2" data-target="#sammie"> <img src="images/dog_4_filter.png" alt="Sammie" />
+                    <p><strong>Sammie</strong></p></a>
+                    <a class="open-modal2" data-target="#copper"> <img src="images/dog_1_filter.png" alt="Copper" />
+                        <p><strong>Copper</strong></p></a>
+                <a class="open-modal2" data-target="#luna"> <img src="images/dog_2_filter.png" alt="Luna" />
+                    <p><strong>Luna</strong></p></a>
+                <a class="open-modal2" data-target="#daisy"> <img src="images/dog_3_filter.png" alt="Daisy" />
+                    <p><strong>Daisy</strong></p></a>
+            </div>
+        </section>   
+            <div class="modal" id="baily">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Baily</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="rockie">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Rockie</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="frisco">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Frisco</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="sammie">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Sammie</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="copper">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Copper</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="luna">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Luna</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="modal" id="daisy">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Daisy</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="dog-para">
+                <p>These amazing dogs help us train the horses, and at night, when we head out riding through the forest, we put glowing collars on them. If we ever lose the trail, they always find the way back for us. It’s such a blast—so much fun!</p>
+            </div>
+        </section>
+        <section>
+                <div class="our-story">
+                    <h2>OUR STORY</h2>
+                </div>
+            <div>
+                <div class="our-story-container">
+                    <div>
+                        <img src="images/story_2_filter.png" alt="Guy looking at a horse down in the distance.">
+                    </div>
+                    <div>
+                        <p>We raise, buy, polish, and resell horses, and also take consignments. We offer quality weanlings, yearlings, brood mares, & trail horses. Starting in 1983 and going full-time in 1992, we have sold horses all through the nation. We strive to have the best treatment for our animals. See all of our safety tips and how to maintain your horses.</p>
+                    </div>
+                    <div>
+                        <img src="images/story_1_filter.png" alt="Lady at a fence with a horse on the other side.">
+                    </div>
+                </div>
+            </div>
+            <div class="learn-more">
+                <a href="horseinfo.html"><button>LEARN MORE</button></a>
+            </div>
+        </section>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    </main>
     <a href="#top" id="backToTopBtn">Back to Top</a>
 <!--JS Bootstrap-->    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
