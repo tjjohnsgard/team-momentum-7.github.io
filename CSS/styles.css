@@ -1,3 +1,24 @@
+html {
+    scroll-behavior: smooth;
+}
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #26190D;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+#backToTopBtn:hover {
+  background-color: #fff;
+  color: #26190D;
+}
+
+
+/* Nav */
 .custom-navbar {
     background-color: #26190D !important;
   }
