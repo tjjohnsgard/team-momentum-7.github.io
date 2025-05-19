@@ -364,3 +364,6 @@ body {
   width: 75%;
   margin-bottom: 20px;
 }
+.center-text {
+  justify-content: center;
+}
