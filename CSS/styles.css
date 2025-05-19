@@ -278,9 +278,6 @@ body {
     gap: 30px;
     margin: 0 100px;
 }
-.our-story-container p {
-  text-align: center;
-}
 .flex-item {
     width: calc(100%/3);
     height: 90%;
