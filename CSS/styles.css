@@ -322,19 +322,17 @@ body {
   margin-bottom: 75px;
 }
 .container-maintenance {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .safety-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; 
+  margin: 0 100px;
 }
-.safety-columns img {
-  border: 10px solid #595022;
-  border-radius: 10px;
-}
+
 .safety-item {
-  flex: 1 1 calc(50% - 20px);
+  flex: 1 1 calc(45% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,10 +346,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-}
-.maintenance-columns img {
-  border: 10px solid #595022;
-  border-radius: 10px;
+  margin: 0 100px;
 }
 .maintenance-item {
   flex: 1 1 calc(50% - 20px);
