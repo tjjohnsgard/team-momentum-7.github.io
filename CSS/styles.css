@@ -329,6 +329,10 @@ body {
   flex-wrap: wrap;
   gap: 20px; 
 }
+.safety-columns img {
+  border: 10px solid #595022;
+  border-radius: 10px;
+}
 .safety-item {
   flex: 1 1 calc(50% - 20px);
   display: flex;
@@ -344,6 +348,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+.maintenance-columns img {
+  border: 10px solid #595022;
+  border-radius: 10px;
 }
 .maintenance-item {
   flex: 1 1 calc(50% - 20px);
