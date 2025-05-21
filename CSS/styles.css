@@ -382,7 +382,11 @@ body {
   color: #FFFFFF;
   background-color: #595022;
 }
+.container-information h1 {
+  font-size: 3rem;
+}
 .container-safety h2, .container-maintenance h2 {
+  font-size: 2rem;
   text-align: center;
   padding: 30px 0;
   color: #FFFFFF;
@@ -426,6 +430,10 @@ body {
 .maintenance-item img, p {
   width: 75%;
   margin-bottom: 20px;
+}
+.maintenance-item h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
 }
 .center-text {
   justify-content: center;
