@@ -311,10 +311,12 @@ body {
 
 /* About Page */
 .about-us-h1 {
+  font-size: 3rem;
   text-align: center;
   padding: 20px 0;
   color: #FFFFFF;
   background-color: #595022;
+  letter-spacing: 25px
 }
 .about-us-container {
     width: 100%;
@@ -330,12 +332,15 @@ body {
     text-align: center;
     margin: 5px 10px;
 }
-.flex-item h2 {
+.flex-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
   text-align: left;
   padding-left: 100px;
 }
 .flex-item p {
   color: #AEAAAA;
+  line-height: 1.5;
 }
 .meet-the-dog, .our-story {
   text-align: center;
@@ -343,6 +348,10 @@ body {
   color: #FFFFFF;
   background-color: #26190D;
   margin-bottom: 75px;
+}
+.meet-the-dog h2 {
+  font-size: 2rem;
+  letter-spacing: 25px
 }
 .about-us-container img {
   width: 100%;
@@ -445,6 +454,10 @@ body {
     gap: 30px;
     margin: 0 100px;
 }
+.our-story h2 {
+  font-size: 2rem;
+  letter-spacing: 25px
+}
 .flex-item {
     width: calc(100%/3);
     height: 90%;
@@ -454,6 +467,10 @@ body {
 .dog-para {
   text-align: center;
   margin: 50px 150px;
+  line-height: 1.5;
+}
+.our-story-container p {
+  line-height: 1.5;
 }
 .learn-more {
   text-align: center;
@@ -474,19 +491,28 @@ body {
   transition: 0.3s;
 }
 
-/* Horse inforamtion */
+/* Horse information */
 .container-information {
   text-align: center;
   padding: 20px 0;
   color: #FFFFFF;
   background-color: #595022;
 }
+.container-information h1 {
+  font-size: 3rem;
+  letter-spacing: 25px
+}
 .container-safety h2, .container-maintenance h2 {
+  font-size: 2rem;
   text-align: center;
   padding: 30px 0;
   color: #FFFFFF;
   background-color: #26190D;
   margin-bottom: 75px;
+  letter-spacing: 25px
+}
+.safety-columns p, .maintenance-columns p {
+  line-height: 1.5;
 }
 .container-maintenance {
   margin-top: 100px;
@@ -525,6 +551,10 @@ body {
 .maintenance-item img, p {
   width: 75%;
   margin-bottom: 20px;
+}
+.maintenance-item h3 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
 }
 .center-text {
   justify-content: center;
@@ -660,3 +690,93 @@ input[pattern]:invalid + label::after {
         .close-button:hover {
             background-color: #ddd;
         }
+.contact-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #FFFFFF;
+  background-color: #595022;
+  letter-spacing: 25px
+}
+.contact-container-hours {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #26190D;
+  color: #FFFFFF;
+}
+.contact-container-hours button {
+  background-color: #AD8666;
+  color: #FDFBFB;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.contact-container-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.contact-container-hours img {
+    max-width: 100%;
+    height: auto;
+}
+.contact-container-hours div {
+    text-align: center;
+    line-height: 1.5;
+}
+.contact-buttons {
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+.faq-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px 0;
+  color: #26190D;
+  background-color: #FFFFFF;
+  margin-top: 50px;
+  letter-spacing: 25px;
+}
+.faq-container {
+  margin-bottom: 75px;
+}
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+.accordion-header {
+  background-color: #26190D;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accordion-content {
+  display: none; /* Hidden by default */
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.accordion-header:hover {
+  background-color: #444;
+}
