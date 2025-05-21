@@ -144,6 +144,7 @@ body {
 
 /* About Page */
 .about-us-h1 {
+  font-size: 3rem;
   text-align: center;
   padding: 20px 0;
   color: #FFFFFF;
@@ -163,7 +164,9 @@ body {
     text-align: center;
     margin: 5px 10px;
 }
-.flex-item h2 {
+.flex-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
   text-align: left;
   padding-left: 100px;
 }
@@ -176,6 +179,9 @@ body {
   color: #FFFFFF;
   background-color: #26190D;
   margin-bottom: 75px;
+}
+.meet-the-dog h2 {
+  font-size: 2rem;
 }
 .about-us-container img {
   width: 100%;
@@ -277,6 +283,9 @@ body {
     padding: 20px 5px;
     gap: 30px;
     margin: 0 100px;
+}
+.our-story h2 {
+  font-size: 2rem;
 }
 .flex-item {
     width: calc(100%/3);
