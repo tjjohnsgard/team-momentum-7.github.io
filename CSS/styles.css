@@ -232,6 +232,7 @@ body {
 }
 .flex-item p {
   color: #AEAAAA;
+  line-height: 1.5;
 }
 .meet-the-dog, .our-story {
   text-align: center;
@@ -358,6 +359,10 @@ body {
 .dog-para {
   text-align: center;
   margin: 50px 150px;
+  line-height: 1.5;
+}
+.our-story-container p {
+  line-height: 1.5;
 }
 .learn-more {
   text-align: center;
@@ -397,6 +402,9 @@ body {
   background-color: #26190D;
   margin-bottom: 75px;
   letter-spacing: 25px
+}
+.safety-columns p, .maintenance-columns p {
+  line-height: 1.5;
 }
 .container-maintenance {
   margin-top: 100px;
