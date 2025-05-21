@@ -90,6 +90,7 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FDFBFB' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Home Page */
 .hero-section {
   position: relative;
   width: 100%;
@@ -141,6 +142,64 @@ body {
   color: #AD8666;
   transition: 0.3s;
 }
+
+.ouranimals {
+  font-size: xx-large;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 25px;
+}
+
+.full-box {
+  width: 100%;
+  background-color: #26190D;
+  padding: 50px;
+}
+
+.home-content1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.text1-content1{
+  flex: 1;
+  margin-bottom: 50px;
+  color: #75A3BF;
+  font-size: 3.5rem;
+  font-style: italic;
+}
+
+.text2-content1{
+  flex: 1;
+  margin-bottom: 30px;
+  color: #FDFBFB;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.img1-content1{
+  flex: 1;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+/* .ouranimals {
+  font-size: xx-large;
+  letter-spacing: 10px;
+  position: absolute;
+  top: 60rem;
+  color: #007bff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+} */
 
 /* About Page */
 .about-us-h1 {
