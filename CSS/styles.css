@@ -188,6 +188,114 @@ body {
   
 }
 
+.home-aboutus-btn {
+  margin-top: 30px;
+  background-color: #AD8666;
+  color: #FDFBFB;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.home-aboutus-btn:hover {
+  background-color: #FDFBFB;
+  color: #AD8666;
+  transition: 0.3s;
+}
+
+.full-box2 {
+  width: 100%;
+  background-color: #89B0C8;
+  padding: 50px;
+}
+
+.review-box {
+  background-color: #89B0C8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "top1 top2 top3"
+  ". center ."
+  "bot1 bot2 bot3";
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.photo p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+    /* Modal Styling */
+  /* .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .modal:target {
+    display: flex;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .modal-content img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .modal-content h2 {
+    margin-top: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .close:hover {
+    color: red;
+  } */
 
 
 /* .ouranimals {
