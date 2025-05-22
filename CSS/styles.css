@@ -309,6 +309,7 @@ body {
   font-weight: 600;
 } */
 
+
 /* About Page */
 .about-us-h1 {
   font-size: 3rem;
@@ -321,6 +322,7 @@ body {
 .about-us-container {
     width: 100%;
     height: 80%;
+    background-color: #75A3BF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,7 +341,7 @@ body {
   padding-left: 100px;
 }
 .flex-item p {
-  color: #AEAAAA;
+  color: #000;
   line-height: 1.5;
 }
 .meet-the-dog, .our-story {
@@ -347,7 +349,7 @@ body {
   padding: 30px 0;
   color: #FFFFFF;
   background-color: #26190D;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 .meet-the-dog h2 {
   font-size: 2rem;
@@ -443,16 +445,17 @@ body {
 .close:hover {
     color: orange;
   }
-.careers-container {
+/* .careers-container {
     margin-bottom: 50px;
-}
+} */
 .our-story-container {
+    background-color: #26190D;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 5px;
+    padding: 75px 75px 0 75px;
     gap: 30px;
-    margin: 0 100px;
 }
 .our-story h2 {
   font-size: 2rem;
@@ -473,7 +476,9 @@ body {
   line-height: 1.5;
 }
 .learn-more {
+  background-color: #26190D;
   text-align: center;
+  padding-bottom: 25px;
 }
 .learn-more button {
   margin-top: 30px;
@@ -502,20 +507,28 @@ body {
   font-size: 3rem;
   letter-spacing: 25px
 }
+.container-safety {
+  background-color: #26190D;
+  padding-bottom: 50px;
+}
 .container-safety h2, .container-maintenance h2 {
   font-size: 2rem;
   text-align: center;
   padding: 30px 0;
-  color: #FFFFFF;
-  background-color: #26190D;
+  color: #26190D;
+  background-color: #FFFFFF;
   margin-bottom: 75px;
   letter-spacing: 25px
 }
 .safety-columns p, .maintenance-columns p {
   line-height: 1.5;
 }
+.safety-columns p {
+  color: #FFFFFF;
+}
 .container-maintenance {
-  margin-top: 100px;
+  margin-top: 20px;
+  background-color: #89B0C8;
 }
 .safety-columns {
   display: flex;
