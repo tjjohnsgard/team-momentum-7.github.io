@@ -115,6 +115,10 @@ body {
   color: #26190D;
   z-index: 1;
 }
+.hero-text * {
+  text-align: center;
+  margin: 0 auto;
+}
 
 .hero-text h1 {
   font-size: 3rem;
@@ -124,6 +128,7 @@ body {
 
 .hero-text p {
   margin-top: 30px;
+  font-style: italic;
 }
 
 .hero-section button {
@@ -225,89 +230,103 @@ body {
   ". center ."
   "bot1 bot2 bot3";
   gap: 20px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
-.photo {
-  display: flex;
-  flex-direction: column;
+.photo-grid *{
   align-items: center;
-  text-decoration: none;
-  color: inherit;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.photo img {
-  width: 100%;
-}
-
-.photo p {
-    margin-top: 8px;
-    font-weight: bold;
-    color: #fff;
-  }
-
-    /* Modal Styling */
-  /* .modal {
+  .modal {
+    display: none;
     position: fixed;
-    top: 0;
+    z-index: 1;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
   }
 
   .modal:target {
-    display: flex;
+    display: block;
   }
 
   .modal-content {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    width: 90%;
+    position: relative;
+    background-color: #efefef;
+    margin: 15% auto;
+    width: 80%;
     max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
 
-  .modal-content img {
-    width: 100%;
-    border-radius: 8px;
-  }
-
-  .modal-content h2 {
-    margin-top: 20px;
-  }
-
-  .close {
+  .close-btn {
+    color: #000;
     position: absolute;
     top: 20px;
-    right: 30px;
-    font-size: 30px;
+    right: 20px;
+    font-size: 24px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
   }
 
-  .close:hover {
-    color: red;
-  } */
+  .modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #26190D;
+  }
 
+  .review-block {
+    text-align: center;
+  }
 
-/* .ouranimals {
-  font-size: xx-large;
-  letter-spacing: 10px;
+  .review-block img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .review-text {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .review-text * {
+    text-align: center;
+    margin: 0 auto;
+  }
+ 
+
+.cloud-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-content img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cloud-text {
   position: absolute;
-  top: 60rem;
-  color: #007bff;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 600;
-} */
+  text-align: center;
+  padding: 1em;
+  max-width: auto;
+  color: #000000; 
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0 !important;
+}
 
 /* About Page */
 .about-us-h1 {
