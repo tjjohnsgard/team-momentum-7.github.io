@@ -371,8 +371,8 @@ body {
 .meet-the-dog, .our-story {
   text-align: center;
   padding: 30px 0;
-  color: #FFFFFF;
-  background-color: #26190D;
+  color: #26190D;
+  background-color: #FFFFFF;
   margin-bottom: 25px;
 }
 .meet-the-dog h2 {
@@ -443,6 +443,9 @@ body {
 .open-modal2 a p {
     text-decoration: none;
     color: #000;
+}
+.open-modal2 p {
+  margin-left: 40px;
 }
 .modal {
     display: none;
@@ -817,3 +820,116 @@ input[pattern]:invalid + label::after {
 .accordion-header:hover {
   background-color: #444;
 }
+
+
+/* Horses for Sale page */
+.sales-h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  color: #FFFFFF;
+  background-color: #595022;
+  letter-spacing: 25px
+}
+.available-h2, .arrivals-h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 25px;
+}
+
+
+
+
+
+ .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .modal3:target {
+    display: block;
+  }
+  .open-modal3 img {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.open-modal3 {
+    text-align: center;
+    width: 25%;
+    color: #000;
+    cursor: pointer;
+}
+.open-modal3 a p {
+    text-decoration: none;
+    color: #000;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+.close:hover {
+    color: orange;
+  }
+
+  .modal4 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .modal4:target {
+    display: block;
+  }
+  .open-modal4 img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+.open-modal4 {
+    text-align: center;
+    width: 25%;
+    color: #000;
+    cursor: pointer;
+}
+.open-modal4 a p {
+    text-decoration: none;
+    color: #000;
+}
+.open-modal4 p {
+  margin-left: 40px;
+}
+  
