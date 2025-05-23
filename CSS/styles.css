@@ -378,6 +378,9 @@ body {
   font-size: 2rem;
   letter-spacing: 25px
 }
+.about-us-container, .about-us-container p {
+  color: #FFFFFF;
+} 
 .about-us-container img {
   width: 100%;
   padding-bottom: 50px;
@@ -444,7 +447,7 @@ body {
     color: #000;
 }
 .open-modal2 p {
-  margin-left: 40px;
+  margin: 5% auto;
 }
 .modal {
     display: none;
@@ -457,35 +460,48 @@ body {
     background-color: rgba(0,0,0,0.5);
   }
 .modal-content {
-    background-color: #fff;
+    color: #000;
     margin: 15% auto;
     padding: 20px;
     width: 80%;
     max-width: 500px;
+  }
+.modal-content p {
+  margin: auto;
   }
 .close {
     float: right;
     font-size: 28px;
     cursor: pointer;
   }
+  /* this isn't working to float the X on the right side */
+
 .close:hover {
-    color: orange;
+    color: #AD8666;
   }
 /* .careers-container {
     margin-bottom: 50px;
 } */
 .our-story-container {
     background-color: #26190D;
-    color: #FFFFFF;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 75px 75px 0 75px;
     gap: 30px;
 }
+.our-story {
+  margin: auto;
+}
 .our-story h2 {
+  height: 70px;
+  padding: 40px 75px 0 75px;
   font-size: 2rem;
-  letter-spacing: 25px
+  letter-spacing: 25px;
+  color: #ffffff;
+  background-color: #26190D;
+  
 }
 .flex-item {
     width: calc(100%/3);
@@ -600,6 +616,8 @@ body {
 /* contact page */
 .contact-us-form {
     background-color: #f4f4f4;
+    /* background-color: #89B0C8; */
+    /* change background color to the one above if we are keeping the form on the page if not then just do the same color with the 50% opacity for the pop up background */
 }
 .dialog-container main {
     max-width: 600px;
@@ -651,7 +669,7 @@ input[type="checkbox"] {
     margin-right: 5px;
 }
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #AD8666;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -660,7 +678,7 @@ button[type="submit"] {
     font-size: 1em;
 }
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #89B0C8;
 }
 input:invalid,
 textarea:invalid,
@@ -737,29 +755,51 @@ input[pattern]:invalid + label::after {
 }
 .contact-container-hours {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100%;
     gap: 20px;
     text-align: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
 }
 .contact-container-hours img {
     max-width: 100%;
     height: auto;
 }
-.contact-container-hours div {
+.hours {
+  font-size: 2rem;
+}
+.contact_horse {
+  min-width: 10rem;
+}
+.contact-container-hours p {
+    margin: auto;
     text-align: center;
     line-height: 1.5;
 }
+.contact_div {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    gap: 2rem;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 2;
+   }
 .contact-buttons {
-   display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     text-align: center;
     align-items: center;
     margin: 0 auto;
     padding: 20px;
+}
+.contact_div button:hover {
+  background-color: #FDFBFB;
+  color: #AD8666;
+  transition: 0.3s;
 }
 .faq-container h2 {
   font-size: 2rem;
@@ -792,7 +832,9 @@ input[pattern]:invalid + label::after {
   background-color: #f9f9f9;
 }
 .accordion-header:hover {
-  background-color: #444;
+  background-color: #ddd0c5;
+  color: #26190D;
+  transition: 0.3s;
 }
 
 
@@ -880,7 +922,8 @@ input[pattern]:invalid + label::after {
     cursor: pointer;
   }
 .close:hover {
-    color: orange;
+    color: #AD8666;
+;
   }
   .modal4 {
     display: none;
@@ -916,3 +959,141 @@ input[pattern]:invalid + label::after {
   margin-left: 40px;
 }
   
+/* TABLET */
+@media only screen and (max-width: 990px) {
+
+  /* about */
+  .flex-item {
+    width: 100%;
+    padding: 10% 0;
+    align-items: center;
+    aspect-ratio: auto;
+  }
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10% 0 7% 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-container img {
+    max-width: 40%;
+    min-width: 200px;
+    height: auto;
+    padding-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+  #owner {
+    margin: auto;
+    min-width: 70vw;
+    padding: 0;  
+  }
+  #ownerHeader {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  #ownerHeader br {
+    display: none;
+   }
+  #ownerQuote {
+    width: 100%;
+    padding: 0;
+    justify-self: center;
+    text-align: center;
+    white-space: nowrap;
+    aspect-ratio: auto;
+   }
+  .carousel {
+    width: 100%;
+    height: 100%;
+   }
+  .carousel img {
+    width: 100%;
+    height: 100%;
+   } 
+   .text, .dog-para {
+    margin:auto;
+   }
+   .dog-para {
+    height: 300px;
+    padding: 10%;
+   }
+  .our-story-container, .contact-container-hours  {
+    display: flex;
+    flex-direction: column;
+   }
+  .story_img {
+    padding: 0;
+    width: 15rem;
+    height: 15rem;
+   }
+   #img_2 {
+    display: none;
+    visibility: hidden;
+   }
+
+   /* contact */
+   .contact_horse {
+    width: 30%;
+   } 
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+  .hero-text h1, .about-us-h1, .contact-container h1, .container-information, .sales-h1 {
+    font-size: 2rem;
+  }
+  h2, .meet-the-dog h2, .our-story h2  {
+    font-size: 1.5rem;
+  }
+/* need to add testimonials when done */
+
+  /* about */
+  .about-us-container {
+    padding: 10% 0 7% 0;
+  }
+  #ownerQuote {
+    font-size: 1rem;
+    white-space: wrap;
+  }
+  .text, .dog-para {
+    width: 100%;
+    aspect-ratio: auto;
+    overflow: auto;
+   }
+   .text {
+    max-height: 15rem;
+    text-align: center;
+   }
+   .container-carousel {
+    margin: auto;
+    max-width: 20rem;
+    max-height: 30rem;
+    overflow: hidden;
+   }
+   .open-modal2 p {
+    padding-bottom: 10%;
+   }
+   .dog-para {
+    height: 100%;
+   } 
+   .story_img {
+    width: 10rem;
+    height: 10rem;
+   }
+
+   /* contact */
+   .contact_div {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    gap: 2rem;
+   }
+   #contactForm {
+    background-color: purple;
+   }
+}
