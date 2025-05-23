@@ -35,6 +35,24 @@ body {
   color: #26190D;
 }
 
+/* Header 1 - all h1 except homepage */
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #FFFFFF;
+  background-color: #595022;
+  letter-spacing: 25px
+}
+/* Header 2 */
+.h2, .h2_small {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px;
+  letter-spacing: 25px;
+}
+
 /* Nav */
 .custom-navbar {
     background-color: #26190D !important;
@@ -335,17 +353,9 @@ body {
 
 
 /* About Page */
-.about-us-h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 20px 0;
-  color: #FFFFFF;
-  background-color: #595022;
-  letter-spacing: 25px
-}
 .about-us-container {
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #75A3BF;
     display: flex;
     align-items: center;
@@ -367,16 +377,6 @@ body {
 .flex-item p {
   color: #000;
   line-height: 1.5;
-}
-.meet-the-dog, .our-story {
-  font-size: 2rem;
-  text-align: center;
-  margin: 50px;
-  letter-spacing: 25px;
-}
-.meet-the-dog h2 {
-  font-size: 2rem;
-  letter-spacing: 25px
 }
 .about-us-container, .about-us-container p {
   color: #FFFFFF;
@@ -491,10 +491,9 @@ body {
     padding: 75px 75px 0 75px;
     gap: 30px;
 }
-.our-story {
-  margin: auto;
-}
-.our-story h2 {
+
+.h2_alt {
+  text-align: center;
   height: 70px;
   padding: 40px 75px 0 75px;
   font-size: 2rem;
@@ -545,20 +544,16 @@ body {
   color: #FFFFFF;
   background-color: #595022;
 }
-.container-information h1 {
-  font-size: 3rem;
-  letter-spacing: 25px
-}
 .container-safety {
   background-color: #26190D;
   padding-bottom: 50px;
 }
-.safety-h2, .maintenance-h2 {
+/* .safety-h2, .maintenance-h2 {
   font-size: 2rem;
   text-align: center;
   margin: 50px;
   letter-spacing: 25px;
-}
+} */
 .safety-columns p, .maintenance-columns p {
   line-height: 1.5;
 }
@@ -575,7 +570,6 @@ body {
   gap: 20px; 
   margin: 0 100px;
 }
-
 .safety-item {
   flex: 1 1 calc(45% - 20px);
   display: flex;
@@ -728,14 +722,7 @@ input[pattern]:invalid + label::after {
         .close-button:hover {
             background-color: #ddd;
         } */
-.contact-container h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 20px 0;
-  color: #FFFFFF;
-  background-color: #595022;
-  letter-spacing: 25px
-}
+
 .contact-container-hours {
   width: 100%;
   height: 100vh;
@@ -765,9 +752,6 @@ input[pattern]:invalid + label::after {
 .contact-container-hours img {
     max-width: 100%;
     height: auto;
-}
-.hours {
-  font-size: 2rem;
 }
 .contact_horse {
   min-width: 10rem;
@@ -800,12 +784,7 @@ input[pattern]:invalid + label::after {
   color: #AD8666;
   transition: 0.3s;
 }
-.faq-container h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 50px;
-  letter-spacing: 25px;
-}
+
 .faq-container {
   margin-bottom: 75px;
 }
@@ -842,20 +821,7 @@ input[pattern]:invalid + label::after {
 
 
 /* Horses for Sale page */
-.sales-h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 20px 0;
-  color: #FFFFFF;
-  background-color: #595022;
-  letter-spacing: 25px
-}
-.available-h2, .arrivals-h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 50px;
-  letter-spacing: 25px;
-}
+
 .available-horses {
   display: flex;
   flex-direction: row;  
@@ -1043,18 +1009,46 @@ input[pattern]:invalid + label::after {
     width: 30%;
    } 
 
+   /* Horse for Sale - - still working on this*/
+   .available-horses {
+    flex-direction: column;
+    width: 100%;
+   }
+   a.open-modal3.horse {
+    margin: auto;
+    width: 100%;
+   } 
+
 }
 
 /* MOBILE */
 @media only screen and (max-width: 480px) {
-  .hero-text h1, .about-us-h1, .contact-container h1, .container-information, .sales-h1 {
-    font-size: 2rem;
-  }
-  h2, .meet-the-dog h2, .our-story h2  {
+  .h1 {
     font-size: 1.5rem;
+    padding: 10%;
+    letter-spacing: 15px;
   }
-/* need to add testimonials when done */
-
+  #h1_medium {
+    font-size: medium;
+    padding: 10%;
+    letter-spacing: 15px;
+  }
+  .h2 {
+    font-size: 1.5rem;
+    margin: 10%;
+    letter-spacing: 15px;
+  }
+  .h2_small {
+    font-size: 1rem;
+    margin: 10%;
+    letter-spacing: 15px;
+  }
+  .h2_alt {
+    font-size: 1rem;
+    padding-bottom: 15%;
+    letter-spacing: 15px;
+  }
+  
   /* about */
   .about-us-container {
     padding: 10% 0 7% 0;
@@ -1088,13 +1082,30 @@ input[pattern]:invalid + label::after {
     width: 10rem;
     height: 10rem;
    }
+   .our-story-container {
+    padding-top: 5%;
+   }
 
    /* contact */
    .contact_div {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
-    gap: 2rem;
+    margin: 10%;
    }
-  
+   #hours {
+    font-size: 1.5rem;
+  }
+  .contact-container-hours p {
+    margin-bottom: 5%;
+  }
+  .contact_horse {
+    margin-top: 10%;
+  }
+  .contact_div button {
+    font-size: .75rem;
+  }
+
+   /* Horse for Sale - - still working on this */
+   a.open-modal3.horse img {
+    max-width: 20rem;;
+    height: 20rem;
+   }
 }
