@@ -491,7 +491,6 @@ body {
     padding: 75px 75px 0 75px;
     gap: 30px;
 }
-
 .h2_alt {
   text-align: center;
   height: 70px;
@@ -499,8 +498,7 @@ body {
   font-size: 2rem;
   letter-spacing: 25px;
   color: #ffffff;
-  background-color: #26190D;
-  
+  background-color: #26190D; 
 }
 .flex-item {
     width: calc(100%/3);
@@ -513,6 +511,13 @@ body {
   margin: 50px 150px;
   line-height: 1.5;
 }
+#text_2 {
+    margin: 20px;
+    min-width: 200px;
+    max-height: 350px;
+    overflow-y: auto;
+    align-content: center;
+   }
 .our-story-container p {
   line-height: 1.5;
 }
@@ -548,12 +553,6 @@ body {
   background-color: #26190D;
   padding-bottom: 50px;
 }
-/* .safety-h2, .maintenance-h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin: 50px;
-  letter-spacing: 25px;
-} */
 .safety-columns p, .maintenance-columns p {
   line-height: 1.5;
 }
@@ -766,6 +765,7 @@ input[pattern]:invalid + label::after {
     flex-direction: row;
     margin: 5%;
     gap: 2rem;
+    align-content: center;
     justify-content: center;
     grid-column: 2;
     grid-row: 2;
@@ -828,10 +828,12 @@ input[pattern]:invalid + label::after {
   flex-wrap: wrap;         
   gap: 16px;       
   background-color: #89B0C8; 
-  padding: 40px 50px;      
-}
+  padding: 40px 50px;
+  justify-content: center;   
+} 
 .available-horses > .horse {
-  flex: 0 0 48%;       
+  flex: 0 0 48%; 
+  width: 100%;      
   box-sizing: border-box;
   padding: 20px;
 }
@@ -839,7 +841,7 @@ input[pattern]:invalid + label::after {
   text-decoration: none;
   margin-left: 60px
 }
- .modal3 {
+.modal3 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -850,10 +852,10 @@ input[pattern]:invalid + label::after {
     overflow: auto;
     background-color: rgba(0,0,0,0.7);
   }
-  .modal3:target {
+.modal3:target {
     display: block;
   }
-  .open-modal3 img {
+.open-modal3 img {
     width: auto;
     height: auto;
     margin: auto;
@@ -864,10 +866,15 @@ input[pattern]:invalid + label::after {
     color: #000;
     cursor: pointer;
 }
-.open-modal3 a p {
-    text-decoration: none;
-    color: #000;
-}
+.open-modal3.horse {
+    color: white;
+    text-decoration-line: none;
+   }
+.open-modal3.horse p {
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+   }
 .modal {
     display: none;
     position: fixed;
@@ -892,7 +899,6 @@ input[pattern]:invalid + label::after {
   }
 .close:hover {
     color: #AD8666;
-;
   }
   .modal4 {
     display: none;
@@ -931,7 +937,7 @@ input[pattern]:invalid + label::after {
 /* TABLET */
 @media only screen and (max-width: 990px) {
 
-  /* about */
+  /* About */
   .flex-item {
     width: 100%;
     padding: 10% 0;
@@ -983,12 +989,18 @@ input[pattern]:invalid + label::after {
     width: 100%;
     height: 100%;
    } 
-   .text, .dog-para {
-    margin:auto;
-   }
    .dog-para {
+    margin: 0;
     height: 300px;
     padding: 10%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+   }
+   #text_2 {
+    padding: 0;
+    margin: 0;
+    align-content: center;
    }
   .our-story-container, .contact-container-hours  {
     display: flex;
@@ -1004,12 +1016,12 @@ input[pattern]:invalid + label::after {
     visibility: hidden;
    }
 
-   /* contact */
+   /* Contact */
    .contact_horse {
     width: 30%;
    } 
 
-   /* Horse for Sale - - still working on this*/
+   /* Horse for Sale */
    .available-horses {
     flex-direction: column;
     width: 100%;
@@ -1049,7 +1061,7 @@ input[pattern]:invalid + label::after {
     letter-spacing: 15px;
   }
   
-  /* about */
+  /* About */
   .about-us-container {
     padding: 10% 0 7% 0;
   }
@@ -1086,7 +1098,7 @@ input[pattern]:invalid + label::after {
     padding-top: 5%;
    }
 
-   /* contact */
+   /* Contact */
    .contact_div {
     margin: 10%;
    }
@@ -1102,10 +1114,17 @@ input[pattern]:invalid + label::after {
   .contact_div button {
     font-size: .75rem;
   }
+  .contact_div button img {
+    width: 1rem;
+  }
 
-   /* Horse for Sale - - still working on this */
+   /* Horse for Sale */
    a.open-modal3.horse img {
-    max-width: 20rem;;
-    height: 20rem;
+    max-width: 15rem;
+    max-height: 15rem; 
    }
+   .open-modal3.horse {
+    justify-items: center;
+   }
+
 }
