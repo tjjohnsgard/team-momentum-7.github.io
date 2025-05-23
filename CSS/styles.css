@@ -685,7 +685,7 @@ input[pattern]:invalid + label::after {
     content: " (Invalid format)";
 }
 
-.dialog-container {
+/* .dialog-container {
             position: relative;
             width: 500px;
             padding: 20px;
@@ -710,7 +710,7 @@ input[pattern]:invalid + label::after {
 
         .close-button:hover {
             background-color: #ddd;
-        }
+        } */
 .contact-container h1 {
   font-size: 3rem;
   text-align: center;
@@ -793,6 +793,10 @@ input[pattern]:invalid + label::after {
 }
 .accordion-header:hover {
   background-color: #444;
+}
+.email-us {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 
