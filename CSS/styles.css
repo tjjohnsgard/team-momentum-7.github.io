@@ -566,7 +566,7 @@ body {
   color: #FFFFFF;
 }
 .container-maintenance {
-  margin-top: 20px;
+  padding-top: 50px;
   background-color: #89B0C8;
 }
 .safety-columns {
@@ -615,9 +615,8 @@ body {
 
 /* contact page */
 .contact-us-form {
-    background-color: #f4f4f4;
-    /* background-color: #89B0C8; */
-    /* change background color to the one above if we are keeping the form on the page if not then just do the same color with the 50% opacity for the pop up background */
+    padding: 5%;
+    background-color: #89B0C8;
 }
 .dialog-container main {
     max-width: 600px;
@@ -703,7 +702,7 @@ input[pattern]:invalid + label::after {
     content: " (Invalid format)";
 }
 
-.dialog-container {
+/* .dialog-container {
             position: relative;
             width: 500px;
             padding: 20px;
@@ -728,7 +727,7 @@ input[pattern]:invalid + label::after {
 
         .close-button:hover {
             background-color: #ddd;
-        }
+        } */
 .contact-container h1 {
   font-size: 3rem;
   text-align: center;
@@ -835,6 +834,10 @@ input[pattern]:invalid + label::after {
   background-color: #ddd0c5;
   color: #26190D;
   transition: 0.3s;
+}
+.email-us {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 
