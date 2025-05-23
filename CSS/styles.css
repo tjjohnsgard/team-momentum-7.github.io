@@ -1096,7 +1096,5 @@ input[pattern]:invalid + label::after {
     margin: 5%;
     gap: 2rem;
    }
-   #contactForm {
-    background-color: purple;
-   }
+  
 }
