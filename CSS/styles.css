@@ -742,7 +742,7 @@ input[pattern]:invalid + label::after {
     text-align: center;
     align-items: center;
     margin: 0 auto;
-    padding: 20px;
+    padding: 100px;
 }
 .contact-container-hours img {
     max-width: 100%;
