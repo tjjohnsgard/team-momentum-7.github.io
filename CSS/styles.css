@@ -581,6 +581,9 @@ footer {
   color: #AD8666;
   transition: 0.3s;
 }
+.spacing {
+  padding: 20px;
+}
 
 /* Horse information */
 .container-information {
