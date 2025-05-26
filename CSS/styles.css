@@ -108,6 +108,37 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23FDFBFB' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #26190D; /* Optional: background to distinguish footer */
+}
+.footer-content {
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px;
+    margin: 0 auto;
+    gap: 20px; 
+}
+
+.footer-content > div {
+    flex: 1; 
+}
+.footer-content img {
+  width: 100px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+}
+
+
 /* Home Page */
 .hero-section {
   position: relative;
@@ -320,12 +351,13 @@ body {
   .review-text {
     margin-top: 10px;
     text-align: center;
+    font-weight: bold;
   }
   .review-text * {
     text-align: center;
     margin: 0 auto;
   }
- 
+
 
 .cloud-content {
   position: relative;
