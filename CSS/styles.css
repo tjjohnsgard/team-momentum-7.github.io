@@ -137,6 +137,14 @@ footer {
     align-items: center; 
     text-align: center;  
 }
+.copyright {
+  width: 100%;
+  color: #FFFFFF;
+  align-items: center; 
+  text-align: center; 
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
 
 
 /* Home Page */
