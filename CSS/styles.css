@@ -1094,6 +1094,10 @@ input[pattern]:invalid + label::after {
     white-space: nowrap;
     aspect-ratio: auto;
    }
+  .container-carousel {
+    width: 80%;
+    padding: 30px;
+  }
   .carousel {
     width: 100%;
     height: 100%;
@@ -1156,9 +1160,6 @@ input[pattern]:invalid + label::after {
     flex-wrap: nowrap;
     flex-direction: column;
    }
-   /* .maintenance-item {
-    align-content: center;
-   } */
    #vet {
     display: flex;
     order: 1;
@@ -1169,6 +1170,7 @@ input[pattern]:invalid + label::after {
     display: flex; 
     flex-direction: column;
   }
+  
   /* Home */
   .hero-section {
     object-fit: contain;
