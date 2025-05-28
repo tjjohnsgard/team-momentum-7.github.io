@@ -147,7 +147,7 @@ footer {
 }
 
 /* THIS HAS MULTIPLE SECTIONS FROM DIFF. PAGES */
-.maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para  {
+.maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para, .our-story-container  {
   max-width: 1200px;
   margin: auto;
 }
@@ -420,6 +420,16 @@ footer {
     justify-content: center;
     padding: 80px 5px;
 }
+.bluebkg {
+  background-color: #89B0C8;
+}
+#ownerQuote {
+  font-style: italic;
+}
+#caption {
+  font-style: italic;
+  color: rgb(102, 102, 102);
+}
 .flex-item {
     width: calc(100%/3);
     height: 90%;
@@ -448,6 +458,7 @@ footer {
   padding: 50px;
   border: solid 20px #595022;
   border-radius: 12px;
+  margin-top: 50px;
 }
 .container-carousel p {
   color: #FFFFFF;
@@ -542,8 +553,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 75px 75px 0 75px;
     gap: 30px;
+}
+.our-story-container img {
+  max-width: 230px;
+}
+.brownbkg {
+  background-color: #26190D;
 }
 .flex-item {
     width: calc(100%/3);
@@ -593,9 +609,10 @@ footer {
 }
 .storybkg {
   color: #26190D;
+  align-content: center;
   background-color: #FDFBFB;
-  margin-bottom: 20px;
-  border-top: 20px solid #26190D; 
+  margin-bottom: 50px;
+  border-top: 10px solid #26190D; 
 }
 .dogbkg {
   color: #FDFBFB;
