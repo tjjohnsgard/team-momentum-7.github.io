@@ -121,21 +121,25 @@ footer {
     justify-content: space-between; 
     align-items: flex-start; 
     padding: 20px;
-    margin: 0 auto;
     gap: 20px; 
 }
-
 .footer-content > div {
     flex: 1; 
 }
 .footer-content img {
   width: 100px;
+  padding-top: 40px;
 }
 .contact-info {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    text-align: center;  
+    text-align: center;
+    padding-top: 20px;  
+}
+.contact-info h2 {
+  font-weight: bold;
+  line-height: 4rem;
 }
 .copyright {
   width: 100%;
@@ -147,7 +151,7 @@ footer {
 }
 
 /* THIS HAS MULTIPLE SECTIONS FROM DIFF. PAGES */
-.maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para, .our-story-container  {
+.footer-content, .maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para, .our-story-container, .available-horses, .contact-container-hours  {
   max-width: 1200px;
   margin: auto;
 }
@@ -649,7 +653,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 50px; 
-  margin: auto 100px;
   padding-top: 5%;
 }
 .safety-item {
@@ -835,13 +838,7 @@ input[pattern]:invalid + label::after {
             background-color: #ddd;
         } */
 
-.contact-container-hours {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #26190D;
-  color: #FFFFFF;
-}
+
 .contact-container-hours button {
   background-color: #AD8666;
   color: #FDFBFB;
@@ -858,8 +855,10 @@ input[pattern]:invalid + label::after {
     gap: 20px;
     text-align: center;
     align-items: center;
-    margin: 0 auto;
     padding: 5%;
+    padding-bottom: 0;
+    background-color: #26190D;
+    color: #FFFFFF;
 }
 .contact-container-hours img {
     max-width: 100%;
@@ -897,10 +896,18 @@ input[pattern]:invalid + label::after {
   color: #AD8666;
   transition: 0.3s;
 }
-
-.faq-container {
-  margin-bottom: 75px;
+#hours {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+.faq-container {
+  margin-top: 75px;
+  padding-bottom: 75px;
+  background-color: #FDFBFB; 
+}
+ #questions {
+  padding-top: 35px;
+} 
 .accordion {
   width: 100%;
   max-width: 1000px;
@@ -939,16 +946,16 @@ input[pattern]:invalid + label::after {
   display: flex;
   flex-direction: row;  
   flex-wrap: wrap;         
-  gap: 16px;       
+  gap: 40px;       
   background-color: #89B0C8; 
-  padding: 40px 50px;
+  padding: 40px 0 50px 0;
   justify-content: center;   
 } 
 .available-horses > .horse {
   flex: 0 0 48%; 
   width: 100%;      
   box-sizing: border-box;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .available-horses p {
   text-decoration: none;
