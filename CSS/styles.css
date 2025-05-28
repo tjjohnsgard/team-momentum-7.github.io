@@ -35,7 +35,7 @@ body {
   color: #26190D;
 }
 
-/* Header 1 - all h1 except homepage */
+/* Header 1 */
 .h1 {
   font-size: 3rem;
   text-align: center;
@@ -146,6 +146,11 @@ footer {
   padding-bottom: 20px;
 }
 
+/* THIS HAS MULTIPLE SECTIONS FROM DIFF. PAGES */
+.maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para  {
+  max-width: 1200px;
+  margin: auto;
+}
 
 /* Home Page */
 .hero-section {
@@ -390,13 +395,26 @@ footer {
   font-size: 1rem;
   padding: 0 !important;
 }
+.cloud-text a {
+  color: #75A3BF;
+  text-decoration: none;
+}
+.cloud-text a:hover {
+  color:#AD8666;
+}
+.cloud-media {
+  display: none;
+}
+.line {
+  display: none;
+}
 
 
 /* About Page */
 .about-us-container {
     width: 100%;
     height: 100%;
-    background-color: #75A3BF;
+    background-color: #89B0C8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,9 +436,6 @@ footer {
   color: #000;
   line-height: 1.5;
 }
-.about-us-container, .about-us-container p {
-  color: #FFFFFF;
-} 
 .about-us-container img {
   width: 100%;
   padding-bottom: 50px;
@@ -433,7 +448,6 @@ footer {
   padding: 50px;
   border: solid 20px #595022;
   border-radius: 12px;
-  margin: 0 100px;
 }
 .container-carousel p {
   color: #FFFFFF;
@@ -531,15 +545,6 @@ footer {
     padding: 75px 75px 0 75px;
     gap: 30px;
 }
-.h2_alt {
-  text-align: center;
-  height: 70px;
-  padding: 40px 75px 0 75px;
-  font-size: 2rem;
-  letter-spacing: 25px;
-  color: #ffffff;
-  background-color: #26190D; 
-}
 .flex-item {
     width: calc(100%/3);
     height: 90%;
@@ -548,8 +553,9 @@ footer {
 }
 .dog-para {
   text-align: center;
-  margin: 50px 150px;
+  padding: 50px;
   line-height: 1.5;
+  justify-content: center;
 }
 #text_2 {
     margin: 20px;
@@ -565,6 +571,7 @@ footer {
   background-color: #26190D;
   text-align: center;
   padding-bottom: 25px;
+  border-bottom: 20px solid #26190D;
 }
 .learn-more button {
   margin-top: 30px;
@@ -584,6 +591,20 @@ footer {
 .spacing {
   padding: 20px;
 }
+.storybkg {
+  color: #26190D;
+  background-color: #FDFBFB;
+  margin-bottom: 20px;
+  border-top: 20px solid #26190D; 
+}
+.dogbkg {
+  color: #FDFBFB;
+  background-color: #26190D;
+  margin-bottom: 20px;
+  border-top: 5px solid #89B0C8; 
+  border-bottom: 5px solid #26190D;  
+}
+
 
 /* Horse information */
 .container-information {
@@ -622,8 +643,13 @@ footer {
   text-align: center;
 }
 .safety-item img, p {
-  width: 75%;
+  max-width: 100%;
   margin-bottom: 20px;
+  flex-basis: auto;
+}
+.safety-item img {
+  width: 500px;
+  
 }
 .safety-item p {
   color: #26190D;
@@ -634,11 +660,10 @@ footer {
   border-radius: 20px;
   background-color: #FFFFFF;
 }
-.maintenance-columns {
-  flex-wrap: wrap;
-  gap: 20px;
+/* .maintenance-columns, .safety-columns {
+  max-width: 1200px;
   margin: auto;
-}
+} */
 .maintenance-columns p {
   color: #26190D;
   width: 350px;
@@ -661,6 +686,11 @@ footer {
 .maintenance-item img, p {
   width: 75%;
   margin-bottom: 20px;
+}
+.maintenance-item img {
+  margin: 70px;
+  max-width: 500px;
+  
 }
 .maintenance-item h3 {
   color: #FFFFFF;
@@ -1102,51 +1132,110 @@ input[pattern]:invalid + label::after {
     width: 100%;
     margin: auto;
   }
-   .safety-item img, p {
-    width: 70%;
+   .safety-item img, .safety-item p  {
+    max-width: 400px;
    }
    .maintenance-columns {
     flex-wrap: nowrap;
     flex-direction: column;
    }
+   /* .maintenance-item {
+    align-content: center;
+   } */
    #vet {
     display: flex;
     order: 1;
     flex-direction: column-reverse;
+    
    }
   #nutrition, #care {
     display: flex; 
     flex-direction: column;
+  }
+  /* Home */
+  .hero-section {
+    object-fit: contain;
+    width: 100%;
+    height: 500px;
+  }
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "top1 top2"
+    "top3 bot1"
+    "bot2 bot3";
+  }
+  .horse-and-dog-img {
+    width: 100%;
+    min-width: 200px;
+    padding-right: 50px;
+  }
+  .cloud-media {
+    display: flex;
+    margin: auto;
+    padding: 2%;
+    max-width: 350px;
+  }
+  .cloud-text p {
+    justify-content: center;
+    margin: auto;
+  } 
+  #cloud {
+    display: none;
   }
 
 }
 
 /* MOBILE */
 @media only screen and (max-width: 480px) {
+  .h1, #h1_info, #h1_test, .h2, .ouranimals, .h2_small {
+    letter-spacing: 15px; 
+  } 
   .h1 {
-    font-size: 1.5rem;
-    padding: 10%;
-    letter-spacing: 15px;
+    font-size: x-large;
+    font-weight: bold;
   }
-  #h1_medium {
+  #h1_info, #h1_test {
+    padding: 7% 0 7% 0; 
+  }
+  #h1_test {
+    font-size: 22px;
+  }
+  .h2, .ouranimals {
     font-size: medium;
+    font-weight: bold;
     padding: 10%;
-    letter-spacing: 15px;
-  }
-  .h2 {
-    font-size: 1.5rem;
-    margin: 10%;
-    letter-spacing: 15px;
+    text-align: center;
   }
   .h2_small {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     margin: 10%;
-    letter-spacing: 15px;
+
   }
-  .h2_alt {
-    font-size: 1rem;
-    padding-bottom: 15%;
-    letter-spacing: 15px;
+  footer {
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+   }
+   .footer-content {
+      width: 200px;
+      justify-content: center;
+      gap: 1rem;
+   }
+  .contact-info {
+    padding: 0;
+    margin:0;
+    width: 160px;
+    text-align: left;
+   }
+  .contact-info h2 {
+    font-weight: bold;
+    line-height: 3rem;
+   }
+  .footer-content img {
+    width: 80px;
+    padding-top: 22px;
   }
   
   /* About */
@@ -1161,36 +1250,43 @@ input[pattern]:invalid + label::after {
     width: 100%;
     aspect-ratio: auto;
     overflow: auto;
-   }
-   .text {
+  }
+  .text {
     max-height: 15rem;
     text-align: center;
-   }
-   .container-carousel {
+  }
+  .container-carousel {
     margin: auto;
     max-width: 20rem;
     max-height: 30rem;
     overflow: hidden;
-   }
-   .open-modal2 p {
+  }
+  .open-modal2 p {
     padding-bottom: 10%;
-   }
-   .dog-para {
+  }
+  .dog-para {
     height: 100%;
-   } 
-   .story_img {
+  } 
+  .story_img {
     width: 10rem;
     height: 10rem;
-   }
-   .our-story-container {
+  }
+  .our-story-container {
     padding-top: 5%;
-   }
+  }
+  .flex-item {
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 0;
+    align-items: center;
+    aspect-ratio: auto;
+  }
 
    /* Contact */
-   .contact_div {
+  .contact_div {
     margin: 10%;
-   }
-   #hours {
+  }
+  #hours {
     font-size: 1.5rem;
   }
   .contact-container-hours p {
@@ -1221,6 +1317,73 @@ input[pattern]:invalid + label::after {
   }
   .maintenance-columns {
     flex-direction: column;
+    padding-bottom: 20px;
   }
-   
+  #care, #vet, #nutrition {
+    margin-bottom: 50px;
+  }
+  .safety-item img {
+    width: 300px;
+    margin: auto;
+  }
+  .maintenance-columns h3 {
+    font-size: 25px;
+    padding: 0;
+  }
+    /* Home */
+  .hero-section {
+    object-fit: none;
+    width: 100%;
+    min-height: 650px;
+    height: 100%;
+    padding-top: 150px;
+  }
+  .line {
+    display: block;
+    margin: auto;
+    width: 300px;
+    border-bottom:  2px solid #cecbc9;
+    
+  }
+  .hero-text h1 {
+    position: relative;
+    top: 105px;
+    padding-bottom: 395px;
+  }
+  .hero-text button:hover {
+    border: 1px solid #5c4c3f;
+  }
+  video {
+    position: absolute;
+    width: 100%;
+    min-width: 320px; 
+    max-height: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+  }
+  .ouranimals {
+    padding: 5%;
+    margin: 0;
+    font-size: 1em;
+  }
+  .home-content1 {
+    flex-direction: column-reverse;
+  } 
+  .home-aboutus-btn {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .horse-and-dog-img {
+    width: 250px;
+    padding: 0;
+  }
+  .cloud-media {
+    margin-top: 5%;
+    min-width: 220px;
+    width: 100%;
+    min-height: 100%;
+  }
+ 
+  
 }
