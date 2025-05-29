@@ -12,6 +12,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
     <script src="CSS/Scripts.js"></script>
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -26,32 +27,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">The Owner</a></li>
-                        <li><a class="dropdown-item" href="#">The Dogs</a></li>
+                        <li><a class="dropdown-item" href="about.html">The Owner</a></li>
+                        <li><a class="dropdown-item" href="about.html#the-dogs">The Dogs</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="testimonials.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses Sold
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horsesforsale.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses for Sale
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Available Horses</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html">Available Horses</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html#new-arrivals">New Arrivals</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -59,12 +60,12 @@
                         Horse Information
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Safety Tips</a></li>
+                        <li><a class="dropdown-item" aria-current="page" href="#">Safety Tips</a></li>
                         <li><a class="dropdown-item" href="#">Maintenance</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -76,11 +77,14 @@
         </nav>
     </header>
     <main>
-        <div class="container-information">
-            <h1>Horse Information</h1>
+        <div >
+            <h1 class="h1" id="h1_info">HORSE INFORMATION</h1>
+        </div>
+        <div>
+            <h2 class="h2_small"> SAFETY TIPS</h2>
         </div>
         <div class="container-safety">
-            <h2> Safety Tips</h2>
+            
             <div class="safety-columns">
                 <div class="safety-item">
                     <img src="images/woman-walking-a-white-horse.png" alt="Woman walking a white horse">
@@ -100,33 +104,67 @@
                 </div>
             </div>
         </div>
+        <div>
+            <h2 id="maintenance" class="h2_small">HORSE MAINTENANCE</h2>
+        </div>
         <div class="container-maintenance">
-            <h2>Horse Maintenance</h2>
+            
             <div class="maintenance-columns">
-                <div class="maintenance-item">
-                    <img src="images/girl-bathing-horse.png" alt="Girl hosing does a horse.">
+                <div id="care">
+                    <div class="maintenance-item">
+                        <img src="images/girl-bathing-horse.png" alt="Girl hosing does a horse.">
+                    </div>
+                    <div class="maintenance-item center-text">
+                        <h3>Daily Care</h3>
+                        <p>Daily care for a horse involves a routine that ensures their health, comfort, and well-being. This includes feeding them high-quality hay or grain twice a day, along with constant access to clean water. Grooming is essential to keep their coat clean and to check for injuries or irritations, while hoof care helps prevent infections like thrush. . Regular turnout or exercise keeps them physically and mentally healthy. Cleaning their stall or paddock daily maintains hygiene and reduces the risk of illness. Observing your horse’s behavior and physical condition each day helps catch any signs of illness early, ensuring they stay happy and healthy.</p>
+                    </div>
                 </div>
-                <div class="maintenance-item center-text">
-                    <h3>Daily Care</h3>
-                    <p>Daily care for a horse involves a routine that ensures their health, comfort, and well-being. This includes feeding them high-quality hay or grain twice a day, along with constant access to clean water. Grooming is essential to keep their coat clean and to check for injuries or irritations, while hoof care helps prevent infections like thrush. . Regular turnout or exercise keeps them physically and mentally healthy. Cleaning their stall or paddock daily maintains hygiene and reduces the risk of illness. Observing your horse’s behavior and physical condition each day helps catch any signs of illness early, ensuring they stay happy and healthy.</p>
+                <div id="vet">
+                    <div class="maintenance-item center-text">
+                        <h3>Veterinary Care</h3>
+                        <p>Veterinary care is a vital part of maintaining a horse’s overall health and preventing illness. Regular check-ups help monitor the horse’s condition and ensure vaccinations and deworming schedules are up to date. A vet should also examine any signs of injury, illness, or lameness promptly to prevent complications. Dental care, usually done annually, is important for proper chewing and nutrition. By working closely with a veterinarian, horse owners can ensure their horse stays healthy, comfortable, and able to perform at their best.</p>
+                    </div> 
+                    <div class="maintenance-item">  
+                        <img src="images/horse-showing-teeth.png" alt="Close up of a horse's mouth open and teeth showing.">
+                    </div> 
                 </div>
-                <div class="maintenance-item center-text">
-                    <h3>Veterinary Care</h3>
-                    <p>Veterinary care is a vital part of maintaining a horse’s overall health and preventing illness. Regular check-ups help monitor the horse’s condition and ensure vaccinations and deworming schedules are up to date. A vet should also examine any signs of injury, illness, or lameness promptly to prevent complications. Dental care, usually done annually, is important for proper chewing and nutrition. By working closely with a veterinarian, horse owners can ensure their horse stays healthy, comfortable, and able to perform at their best.</p>
-                </div> 
-                <div class="maintenance-item">  
-                    <img src="images/horse-showing-teeth.png" alt="Close up of a horse's mouth open and teeth showing.">
-                </div> 
-                <div class="maintenance-item">
-                    <img src="images/horse-eating.png" alt="Horse eating grass and leaves.">
-                </div>
-                <div class="maintenance-item center-text">
-                    <h3>Nutrition</h3>
-                    <p>Horse nutrition plays a crucial role in maintaining their health, energy, and overall well-being. The foundation of a horse’s diet is good-quality forage, such as hay or pasture, which provides essential fiber for healthy digestion. Depending on their age, activity level, and health status, horses may also need grains or specialized supplements to meet their nutritional needs. Access to clean, fresh water at all times is vital, as horses can easily become dehydrated. A well-balanced diet helps support strong bones, a shiny coat, and a healthy immune system, keeping the horse fit and thriving.</p>
+                <div id="nutrition">
+                    <div class="maintenance-item">
+                        <img src="images/horse-eating.png" alt="Horse eating grass and leaves.">
+                    </div>
+                    <div class="maintenance-item center-text">
+                        <h3>Nutrition</h3>
+                        <p>Horse nutrition plays a crucial role in maintaining their health, energy, and overall well-being. The foundation of a horse’s diet is good-quality forage, such as hay or pasture, which provides essential fiber for healthy digestion. Depending on their age, activity level, and health status, horses may also need grains or specialized supplements to meet their nutritional needs. Access to clean, fresh water at all times is vital, as horses can easily become dehydrated. A well-balanced diet helps support strong bones, a shiny coat, and a healthy immune system, keeping the horse fit and thriving.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <div class="spacing"></div>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img src="images/footer logo.png" alt="Cloud 9 Walkers logo">
+            </div>
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Cloud 9 Walkers<br>
+                P.O. Box 878<br>
+                    Hardin, Texas 77561-0878<br>
+                    281-726-4545<br>
+                    LKidder328@aol.com<br><br>
+                </p>
+            </div>
+            <div>
+                <a href="#"><img src="images/facebook.png" alt="Facebook image"></a>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                Copyright &copy; 2025 Cloud 9 Walkers | By using this site, you agree to the Terms of Use and Privacy Policy.
+            </p>
+        </div>
+    </footer>
     <a href="#top" id="backToTopBtn">Back to Top</a>
 
 <!--JS Bootstrap-->    

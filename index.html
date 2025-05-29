@@ -12,9 +12,11 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
     <script src="CSS/Scripts.js"></script>
-    <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -31,42 +33,42 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">The Owner</a></li>
-                        <li><a class="dropdown-item" href="#">The Dogs</a></li>
+                        <li><a class="dropdown-item" href="about.html">The Owner</a></li>
+                        <li><a class="dropdown-item" href="about.html#the-dogs">The Dogs</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="testimonials.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses Sold
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horsesforsale.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses for Sale
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Available Horses</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html">Available Horses</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html#new-arrivals">New Arrivals</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horseinfo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horse Information
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Safety Tips</a></li>
-                        <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html">Safety Tips</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html#maintenance">Maintenance</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -85,82 +87,165 @@
             <video src="images/heroVideo.mp4" autoplay muted loop playsinline>Cloud</video>
                 <div class="hero-text">
                         <h1>CLOUD 9 WALKERS</h1>
-                        <p><i>A Texas / National Gaited Experience</i></p>
+                        <p>A Texas / National Gaited Experience</p>
                         <button>Become a Member</button>
                 </div>
             </div>
-            
+        <div class="line"></div>
         <!-- </section> -->
-        <section class="container">
-            <h2>MEET OUR ANIMALS</h2>
-            <h3>Our Philosophy</h3>
-            <p>We practice natural horsemanship to teach our horses to think rather than just react and we love doing it all barefoot.</p>
-            <a href="about.html"><button>MORE ABOUT US</button></a>
-            <img src="images/dog_horse5.jpg" alt="Horse kissing a dog.">
-        </section>
-        <section>
-            <h2>REVIEWS</h2>
-            <div>
-                <div class="about-container-home container">
-                    <a class="open-modal" data-target="#marybeth"> <img src="images/reviews1.jpg" alt="Mary Beth" />
-                            <p><strong>Mary Beth</strong></p></a>
-                    <a class="open-modal" data-target="#rochelle"> <img src="images/reviews2.jpg" alt="Rochelle" />
-                        <p><strong>Rochelle</strong></p></a>
-                    <a class="open-modal" data-target="#petertom"> <img src="images/reviews3.jpg" alt="Peter & Tom" />
-                        <p><strong>Peter & Tom</strong></p></a>
-                    <p>Read what our new owners have to say and explore their stories here.</p>
-                    <a class="open-modal" data-target="#bethany"> <img src="images/reviews4.jpg" alt="Bethany" />
-                        <p><strong>Bethany</strong></p></a>
-                    <a class="open-modal" data-target="#tj"> <img src="images/reviews5.jpg" alt="TJ" />
-                        <p><strong>TJ</strong></p></a>
-                    <a class="open-modal" data-target="#carol"> <img src="images/reviews6.jpg" alt="Carol" />
-                            <p><strong>Carol</strong></p></a>
-                    <div class="modal" id="marybeth">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Mary Beth</h3>
-                            <p></p>
-                        </div>
+        <h2 class="ouranimals">MEET OUR ANIMALS</h2> 
+        <div class="full-box">
+            <div class="home-content1">
+                <div class="philosophy">
+                    <div class="text1-content1">
+                        <h3>Our<br>Philosophy</h3>
                     </div>
-                    <div class="modal" id="rochelle">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Rochelle</h3>
-                            <p></p>
-                        </div>
+                    <div class="text2-content1">
+                        <p>We practice natural horsemanship to teach our horses to think rather than just react and we love doing it all barefoot.</p>
                     </div>
-                    <div class="modal" id="petertom">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Peter & Tom</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="modal" id="bethany">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Bethany</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="modal" id="tj">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>TJ</h3>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="modal" id="carol">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Carol</h3>
-                            <p></p>
-                        </div>
-                    </div>
-            </div>     
-        </section>
-    </main>
+                    <a href="about.html"><button class="home-aboutus-btn">MORE ABOUT US</button></a>
+                </div>
+                
+                <div class="horse-and-dog-img">
+                    <img src="images/CLoud9WalkersEdited/horse_dog_filter.png" alt="Horse and dog">
+                </div>
+            </div>
+         </div>
 
+        
+        <section>
+            <h2 class="ouranimals">REVIEWS</h2>
+            <div class="review-box">
+                <div class="photo-grid">
+                    <div class="review-block" style="grid-area: top1;">
+                            <a href="#mary-modal">
+                            <img src="images/CLoud9WalkersEdited/review_1_filter.png" alt="mary-modal"></a>
+                            <div class="review-text">
+                            <p><strong>Mary Beth & Spirit</strong></p>
+                            </div>
+                    </div>
+                    <div class="review-block" style="grid-area: top2;">
+                            <a href="#rochelle-modal">
+                            <img src="images/CLoud9WalkersEdited/review_2_filter.png" alt="rochelle-modal"></a>
+                            <div class="review-text">
+                            <p><strong>Rochelle & Becca</strong></p>
+                            </div>
+                    </div>
+                    <div class="review-block" style="grid-area: top3;">
+                            <a href="#petertom-modal">
+                            <img src="images/CLoud9WalkersEdited/review_3_filter.png" alt="petertom-modal"></a>
+                            <div class="review-text">
+                            <p><strong>Peter & Tom</strong></p>
+                            </div>
+                    </div>
+                    <div class="cloud-block" id="cloud" style="grid-area: center;">
+                            <div class="cloud-content">
+                                <img src="images/CLoud9WalkersEdited/cloud_bkg.png" alt="cloud background">
+                                <div class="cloud-text">
+                                <p>Read what our new owners have to say and explore their stories <a href="testimonials.html">here</a>.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="review-block" style="grid-area: bot1;">
+                            <a href="#bethany-modal">
+                            <img src="images/CLoud9WalkersEdited/review_4_filter.png" alt="bethany-modal"></a>
+                            <div class="review-text">
+                            <p><strong>Bethany</strong></p>
+                            </div>
+                    </div>
+                    <div class="review-block" style="grid-area: bot2;">
+                            <a href="#tj-modal">
+                            <img src="images/CLoud9WalkersEdited/review_5_filter.png" alt="tj-modal"></a>
+                            <div class="review-text">
+                            <p><strong>TJ</strong></p>
+                            </div>
+                    </div>
+                    <div class="review-block" style="grid-area: bot3;">
+                            <a href="#carol-modal">
+                            <img src="images/CLoud9WalkersEdited/review_6_filter.png" alt="carol-modal"></a>
+                            <div class="review-text">
+                            <p><strong>Carol</strong></p>
+                            </div>
+                    </div>  
+            </div>
+            <div class="cloud-media">
+                            <div class="cloud-content">
+                                <img src="images/CLoud9WalkersEdited/cloud_bkg.png" alt="cloud background">
+                                <div class="cloud-text">
+                                <p>Read what our new owners have to say and explore their stories <a href="testimonials.html">here</a>.</p>
+                                </div>
+                            </div>
+                    </div>
+        </section>
+
+        <div id="mary-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Mary Beth & Spirit</h3><br>
+                    <p>Mary Beth full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+        <div id="rochelle-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Rochelle & Becca</h3><br>
+                    <p>Rochelle full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+        <div id="petertom-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Peter & Tom</h3><br>
+                    <p>Peter & Tom full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+        <div id="bethany-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Bethany</h3><br>
+                    <p>Bethany full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+        <div id="tj-modal" class="modal">
+                <div class="modal-content">
+                    <h3>TJ</h3><br>
+                    <p>TJ full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+        <div id="carol-modal" class="modal">
+                <div class="modal-content">
+                    <h3>Carol</h3><br>
+                    <p>Carol full description goes here.</p>
+                    <a href="#" onclick="history.back(); return false;" class="close-btn"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+        </div>
+    </main>
+    <div class="spacing"></div>
+    <footer>
+            <div class="footer-content">
+                <div>
+                    <img src="images/footer logo.png" alt="Cloud 9 Walkers logo">
+                </div>
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Cloud 9 Walkers<br>
+                    P.O. Box 878<br>
+                        Hardin, Texas 77561-0878<br>
+                        281-726-4545<br>
+                        LKidder328@aol.com<br><br>
+                    </p>
+                </div>
+                <div>
+                    <a href="#"><img src="images/facebook.png" alt="Facebook image"></a>
+                </div>
+            </div>
+            <div>
+                <p class="copyright">
+                    Copyright &copy; 2025 Cloud 9 Walkers | By using this site, you agree to the Terms of Use and Privacy Policy.
+                </p>
+            </div>
+        </footer>
     
     <a href="#top" id="backToTopBtn">Back to Top</a>
 <!--JS Bootstrap-->    

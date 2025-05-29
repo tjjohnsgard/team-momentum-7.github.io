@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -18,6 +18,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
     <script src="CSS/Scripts.js"></script>
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,33 +45,33 @@
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="testimonials.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses Sold
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horsesforsale.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses for Sale
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Available Horses</a></li>
-                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html">Available Horses</a></li>
+                        <li><a class="dropdown-item" href="horsesforsale.html#new-arrivals">New Arrivals</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horseinfo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horse Information
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Safety Tips</a></li>
-                        <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html">Safety Tips</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html#maintenance">Maintenance</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -82,27 +83,28 @@
         </nav>
     </header>
      <main>
-         <section class="about-us-h1">
-            <h1>ABOUT US</h1>
-        </section>
-        <section>
+         <div class="h1">
+            <h1 class="h1">ABOUT US</h1>
+         </div>
+        <section class="bluebkg">
             <div class="about-us-container">
-                <div class="flex-item">
-                    <h2>The<br>Owner</h2>
-                    <p><cite>"Where the gallop echoes, dreams take root."</cite></p>
+                <div class="flex-item" id="owner">
+                    <h3 id="ownerHeader">The Owner</h3><br> 
+                    <!-- <h3 id="ownerHeader-2">Owner</h3><br> -->
+                    <p id="ownerQuote">"Where the gallop echoes, dreams take root."</p>
                 </div>
                 <div class="flex-item">
                     <img src="images/owner_hero_filter.png" alt="Picture of Michael Walker with horse Cisco">
-                    <div>Michael Walker & Cisco</div>
+                    <div id="caption">Michael Walker & Cisco</div>
                 </div>
-                <div class="flex-item">
-                    <p>His life was spent in the saddle, raising and training naturally gaited horses in the heart of Texas. A passion for smooth rides, he’s dedicated to sharing the freedom and beauty of trail riding with every rider who visits the ranch.</p>
+                <div class="flex-item" id="text_1">
+                    His life was spent in the saddle, raising and training naturally gaited horses in the heart of Texas. A passion for smooth rides, he’s dedicated to sharing the freedom and beauty of trail riding with every rider who visits the ranch.
                 </div>
             </div>
         </section>
-        <section>
-             <div class="meet-the-dog">
-                <h2>MEET THE DOGS</h2>
+        <section class="dog-section">
+             <div class="dogbkg">
+                <h2 class="h2_small">MEET THE DOGS</h2>
             </div>
         <section class="container-carousel">
             <div class="carousel">
@@ -177,30 +179,56 @@
             </div>
         </section>  
         <section>
-                <div class="our-story">
-                    <h2>OUR STORY</h2>
+                <div class="storybkg">
+                    <h2 class="h2_small">OUR STORY</h2>
                 </div>
             <div>
                 <div class="our-story-container">
                     <div>
-                        <img src="images/story_2_filter.png" alt="Guy looking at a horse down in the distance.">
+                        <img class="story_img" id="img_1" src="images/story_2_filter.png" alt="Guy looking at a horse down in the distance.">
                     </div>
-                    <div>
+                    <div class="dog-para" id="text_2">
                         We raise, buy, polish, and resell horses, and also take consignments. We offer quality weanlings, yearlings, brood mares, & trail horses. Starting in 1983 and going full-time in 1992, we have sold horses all through the nation. We strive to have the best treatment for our animals. See all of our safety tips and how to maintain your horses.
                     </div>
                     <div>
-                        <img src="images/story_1_filter.png" alt="Lady at a fence with a horse on the other side.">
+                        <img class="story_img" id="img_2" src="images/story_1_filter.png" alt="Lady at a fence with a horse on the other side.">
                     </div>
+                    
                 </div>
-            </div>
-            <div class="learn-more">
-                <a href="horseinfo.html"><button>LEARN MORE</button></a>
+                <div class="learn-more">
+                        <a href="horseinfo.html"><button>LEARN MORE</button></a>
+                    </div>
             </div>
         </section>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </main>
+    <div class="spacing" id="greenbkg"></div>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img src="images/footer logo.png" alt="Cloud 9 Walkers logo">
+            </div>
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Cloud 9 Walkers<br>
+                P.O. Box 878<br>
+                    Hardin, Texas 77561-0878<br>
+                    281-726-4545<br>
+                    LKidder328@aol.com<br><br>
+                </p>
+            </div>
+            <div>
+                <a href="#"><img src="images/facebook.png" alt="Facebook image"></a>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                Copyright &copy; 2025 Cloud 9 Walkers | By using this site, you agree to the Terms of Use and Privacy Policy.
+            </p>
+        </div>
+    </footer>
     <a href="#top" id="backToTopBtn">Back to Top</a>
 <!--JS Bootstrap-->    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

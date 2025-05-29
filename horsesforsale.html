@@ -8,10 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script> 
+    <script src="JavaScript/scripts.js"></script>
     <script src="CSS/Scripts.js"></script>
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
@@ -26,23 +34,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">The Owner</a></li>
-                        <li><a class="dropdown-item" href="#">The Dogs</a></li>
+                        <li><a class="dropdown-item" href="about.html">The Owner</a></li>
+                        <li><a class="dropdown-item" href="about.html#the-dogs">The Dogs</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="testimonials.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horses Sold
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -55,16 +63,16 @@
                     </ul>
                     </li>
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="horseinfo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Horse Information
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Safety Tips</a></li>
-                        <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html">Safety Tips</a></li>
+                        <li><a class="dropdown-item" href="horseinfo.html#maintenance">Maintenance</a></li>
                     </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -75,7 +83,129 @@
             </div>
         </nav>
     </header>
-    
+    <main>
+        <div class="h1">
+            <h1 class="h1">HORSES FOR SALE</h1>
+        </div>
+        <div>
+            <h2 class="h2_small">AVAILABLE HORSES</h2>
+        </div>
+        <div class="bluebkg">
+            <div class="available-horses">
+                <a class="open-modal3 horse" data-target="#basil"> <img src="images/horse-grazes-mountain-pasture-where-after-rain-green-pastures-alpine.png" alt="Basil" />
+                        <p><strong>Basil</strong></p></a>
+                <a class="open-modal3 horse" data-target="#wanda"> <img src="images/horse-running-through-old-western-landscape.png" alt="Wanda" />
+                    <p><strong>Wanda</strong></p></a>
+                <a class="open-modal3 horse" data-target="#abby"> <img src="images/portrait-bay-horse-summer-field-pet.png" alt="Abby" />
+                    <p><strong>Abby</strong></p></a>
+                <a class="open-modal3 horse" data-target="#clint"> <img src="images/white-horse-in-field.png" alt="Clint" />
+                    <p><strong>Clint</strong></p></a>
+            </div>
+        </div> 
+        <section>
+            <div class="modal" id="basil">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Basil</h3>
+                    <p>Basil is a calm and thoughtful gelding who exudes quiet confidence. He’s the kind of horse that takes everything in stride and is perfect for nervous riders. With his steady pace and kind eyes, he’s a trusted partner on every trail.</p>
+                </div>
+            </div>
+            <div class="modal" id="wanda">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Wanda</h3>
+                    <p>Wanda is a lively mare with a curious streak and a sharp mind. She’s always alert and ready to explore, often the first to notice something new in her surroundings. Her playful spirit makes her a favorite among those who enjoy a bit of spunk.</p>
+                </div>
+            </div>
+            <div class="modal" id="abby">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Abby</h3>
+                    <p>Abby is a gentle and affectionate mare who loves being groomed and doted on. She’s patient and calm, making her ideal for beginners and children. Her kind nature and soft eyes endear her to everyone she meets.</p>
+                </div>
+            </div>
+            <div class="modal" id="clint">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Clint</h3>
+                    <p>Clint is a strong, no-nonsense gelding with years of experience under his girth. He’s the dependable type who thrives on hard work and routine. Though not overly affectionate, he earns respect through his unwavering loyalty and grit.</p>
+                </div>
+            </div>
+        </section>
+            <div>
+                <div>
+                    <h2 id="new-arrivals" class="h2_small">NEW ARRIVALS</h2>
+                </div>
+            </div>
+            <section class="container-carousel">
+                    <div class="carousel">
+                        <a class="open-modal4" data-target="#dolly"> <img src="images/black-colt-running.png" alt="Dolly" />
+                                <p><strong>Dolly</strong></p></a>
+                        <a class="open-modal4" data-target="#echo"> <img src="images/horse-grazing-on-grass.png" alt="Echo" />
+                            <p><strong>Echo</strong></p></a>
+                        <a class="open-modal4" data-target="#fancy"> <img src="images/horse-running-in-field.png" alt="Fancy" />
+                            <p><strong>Fancy</strong></p></a>
+                        <a class="open-modal4" data-target="#buck"> <img src="images/horse-walking-in-field.png" alt="Buck" />
+                            <p><strong>Buck</strong></p></a>
+                    </div>
+            </section> 
+            <section>
+                <div class="modal4" id="dolly">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Dolly</h3>
+                        <p>Dolly is a flashy and charismatic foal who loves attention and knows how to work a crowd. Whether she's in a parade or a show ring, she carries herself with style and pride. Her confident gait and gleaming coat make her unforgettable.</p>
+                    </div>
+                </div>
+                <div class="modal4" id="echo">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Echo</h3>
+                        <p>Echo is a quiet, graceful horse who moves like a whisper on the wind. She’s observant and intuitive, often seeming to sense what her rider needs before being asked. Her calm presence makes her a soothing companion on solo rides.</p>
+                    </div>
+                </div>
+                <div class="modal4" id="fancy">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Fancy</h3>
+                        <p>Fancy is an elegant mare with a flair for drama and a high-stepping trot. She loves the spotlight and knows how to shine in the show arena. Behind the glamor, she’s smart and responsive, always eager to please.</p>
+                    </div>
+                </div>
+                <div class="modal4" id="buck">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Buck</h3>
+                        <p>Buck is a tough, spirited gelding with boundless energy and a bit of a wild streak. He loves wide open spaces and thrives on adventure. While he can be a handful, he’s fiercely loyal and a thrill to ride for those who can match his energy.</p>
+                    </div>
+                </div>
+            </section>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        </main>
+        <div class="spacing"></div>
+        <footer>
+            <div class="footer-content">
+                <div>
+                    <img src="images/footer logo.png" alt="Cloud 9 Walkers logo">
+                </div>
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Cloud 9 Walkers<br>
+                    P.O. Box 878<br>
+                        Hardin, Texas 77561-0878<br>
+                        281-726-4545<br>
+                        LKidder328@aol.com<br><br>
+                    </p>
+                </div>
+                <div>
+                    <a href="#"><img src="images/facebook.png" alt="Facebook image"></a>
+                </div>
+            </div>
+            <div>
+                <p class="copyright">
+                    Copyright &copy; 2025 Cloud 9 Walkers | By using this site, you agree to the Terms of Use and Privacy Policy.
+                </p>
+            </div>
+        </footer>
     
     <a href="#top" id="backToTopBtn">Back to Top</a>
 <!--JS Bootstrap-->    

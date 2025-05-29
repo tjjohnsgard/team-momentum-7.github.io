@@ -57,3 +57,74 @@ $(document).ready(function() {
         $(this).closest('.modal').hide();
     })
 })
+
+// contact page
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const modal = document.getElementById('contactModal');
+    const closeButton = document.querySelector('.close-button'); 
+    if (closeButton && modal) {
+        closeButton.addEventListener('click', function() {
+            modal.style.display = 'none'; 
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.style.display = 'none';
+            }
+            if (form) {
+                form.reset();
+            }
+        });
+    }
+
+    form.addEventListener('submit', function(event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            alert('Please fill in all required fields.');
+        } else {
+            alert('Form submitted successfully.');
+
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.style.display = 'block'; 
+            }
+
+        }
+    });
+});
+$(document).ready(function() {
+    $('.accordion-header').click(function() {
+        if ($(this).next('.accordion-content').is(':visible')) {
+            $(this).next('.accordion-content').slideUp();
+        } else {
+            $('.accordion-content').slideUp();
+            $(this).next('.accordion-content').slideDown();
+        }
+    });
+})
+
+// Horses for sale page
+$(document).ready(function() {
+    //Open Modal
+    $('.open-modal4').click(function() {
+        var targetModal = $(this).data("target");
+        $(targetModal).show();
+    })
+
+    //Close Modal
+    $('.close').click(function() {
+        $(this).closest('.modal4').hide();
+    })
+})
+
+$(document).ready(function() {
+    //Open Modal
+    $('.open-modal3').click(function() {
+        var targetModal = $(this).data("target");
+        $(targetModal).show();
+    })
+
+    //Close Modal
+    $('.close').click(function() {
+        $(this).closest('.modal').hide();
+    })
+})
