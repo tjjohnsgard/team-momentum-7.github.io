@@ -149,11 +149,23 @@ footer {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+.spacing {
+  padding: 20px;
+}
+#greenbkg {
+  background-color: #595022;
+}
 
 /* THIS HAS MULTIPLE SECTIONS FROM DIFF. PAGES */
-.footer-content, .maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para, .our-story-container, .available-horses, .contact-container-hours  {
+.footer-content, .maintenance-columns, .safety-columns, .about-us-container, .container-carousel, .dog-para, .our-story-container, .available-horses {
   max-width: 1200px;
   margin: auto;
+}
+.bluebkg {
+  background-color: #89B0C8;
+}
+.brownbkg {
+  background-color: #26190D;
 }
 
 /* Home Page */
@@ -424,15 +436,17 @@ footer {
     justify-content: center;
     padding: 80px 5px;
 }
-.bluebkg {
-  background-color: #89B0C8;
-}
 #ownerQuote {
+  padding: 10px;
   font-style: italic;
 }
 #caption {
   font-style: italic;
-  color: rgb(102, 102, 102);
+  color: rgb(206, 206, 206);
+}
+#text_1 {
+  font-weight: 500;
+  padding-right: 0;
 }
 .flex-item {
     width: calc(100%/3);
@@ -441,10 +455,12 @@ footer {
     margin: 5px 10px;
 }
 .flex-item h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
   text-align: left;
-  padding-left: 100px;
+  padding-left: 40px;
+  letter-spacing: 1.5px;
 }
 .flex-item p {
   color: #000;
@@ -543,7 +559,7 @@ footer {
     font-size: 28px;
     cursor: pointer;
   }
-  /* this isn't working to float the X on the right side */
+/* this isn't working to float the X on the right side */
 
 .close:hover {
     color: #AD8666;
@@ -552,8 +568,6 @@ footer {
     margin-bottom: 50px;
 } */
 .our-story-container {
-    background-color: #26190D;
-    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -561,9 +575,6 @@ footer {
 }
 .our-story-container img {
   max-width: 230px;
-}
-.brownbkg {
-  background-color: #26190D;
 }
 .flex-item {
     width: calc(100%/3);
@@ -588,10 +599,9 @@ footer {
   line-height: 1.5;
 }
 .learn-more {
-  background-color: #26190D;
+  background-color: #ffffff;
   text-align: center;
-  padding-bottom: 25px;
-  border-bottom: 20px solid #26190D;
+  padding-bottom: 35px;
 }
 .learn-more button {
   margin-top: 30px;
@@ -608,15 +618,12 @@ footer {
   color: #AD8666;
   transition: 0.3s;
 }
-.spacing {
-  padding: 20px;
-}
 .storybkg {
-  color: #26190D;
-  align-content: center;
-  background-color: #FDFBFB;
-  margin-bottom: 50px;
-  border-top: 10px solid #26190D; 
+  color: #FDFBFB;
+  background-color: #26190D;
+  margin-bottom: 20px;
+  border-top: 5px solid #ffffff; 
+  border-bottom: 5px solid #26190D; 
 }
 .dogbkg {
   color: #FDFBFB;
@@ -680,10 +687,6 @@ footer {
   border-radius: 20px;
   background-color: #FFFFFF;
 }
-/* .maintenance-columns, .safety-columns {
-  max-width: 1200px;
-  margin: auto;
-} */
 .maintenance-columns p {
   color: #26190D;
   width: 350px;
@@ -838,7 +841,19 @@ input[pattern]:invalid + label::after {
             background-color: #ddd;
         } */
 
-
+.contact-container-hours {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    max-width: 1250px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    padding-bottom: 0;
+    background-color: #26190D;
+    color: #FFFFFF;
+}
 .contact-container-hours button {
   background-color: #AD8666;
   color: #FDFBFB;
@@ -848,24 +863,13 @@ input[pattern]:invalid + label::after {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.contact-container-hours {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 100%;
-    gap: 20px;
-    text-align: center;
-    align-items: center;
-    padding: 5%;
-    padding-bottom: 0;
-    background-color: #26190D;
-    color: #FFFFFF;
-}
 .contact-container-hours img {
     max-width: 100%;
-    height: auto;
 }
 .contact_horse {
-  min-width: 10rem;
+  min-width: 200px;
+  
+  align-content: center;
 }
 .contact-container-hours p {
     margin: auto;
@@ -874,13 +878,13 @@ input[pattern]:invalid + label::after {
 }
 .contact_div {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin: 5%;
     gap: 2rem;
     align-content: center;
     justify-content: center;
     grid-column: 2;
-    grid-row: 2;
+    /* grid-row: 2; */
    }
 .contact-buttons {
     display: grid;
@@ -897,8 +901,10 @@ input[pattern]:invalid + label::after {
   transition: 0.3s;
 }
 #hours {
+  margin-top: 5%;
   font-size: 1.5rem;
   font-weight: bold;
+  letter-spacing: 2.5px;
 }
 .faq-container {
   margin-top: 75px;
@@ -1101,6 +1107,9 @@ input[pattern]:invalid + label::after {
     white-space: nowrap;
     aspect-ratio: auto;
    }
+   #text_1 {
+    padding-right: 50px;
+   }
   .container-carousel {
     width: 80%;
     padding: 30px;
@@ -1122,13 +1131,17 @@ input[pattern]:invalid + label::after {
     align-content: center;
    }
    #text_2 {
-    padding: 0;
     margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     align-content: center;
    }
   .our-story-container, .contact-container-hours  {
     display: flex;
     flex-direction: column;
+   }
+   .our-story-container {
+    padding-top: 30px;
    }
   .story_img {
     padding: 0;
@@ -1144,6 +1157,9 @@ input[pattern]:invalid + label::after {
    .contact_horse {
     width: 30%;
    } 
+   .contact_div {
+    margin: 2px;
+   }
 
    /* Horse for Sale */
    .available-horses {
@@ -1193,7 +1209,7 @@ input[pattern]:invalid + label::after {
   }
   .horse-and-dog-img {
     width: 100%;
-    min-width: 200px;
+    min-width: 275px;
     padding-right: 50px;
   }
   .cloud-media {
@@ -1292,7 +1308,7 @@ input[pattern]:invalid + label::after {
   }
   .dog-para {
     height: 100%;
-  } 
+  }
   .story_img {
     width: 10rem;
     height: 10rem;
@@ -1307,10 +1323,15 @@ input[pattern]:invalid + label::after {
     align-items: center;
     aspect-ratio: auto;
   }
+  #caption {
+    font-size: small;
+  }
 
    /* Contact */
   .contact_div {
-    margin: 10%;
+    margin-top: 10%;
+    gap: 3rem;
+    padding: 2rem;
   }
   #hours {
     font-size: 1.5rem;
@@ -1389,7 +1410,6 @@ input[pattern]:invalid + label::after {
     border-radius: 30px;
   }
   .ouranimals {
-    padding: 5%;
     margin: 0;
     font-size: 1em;
   }
